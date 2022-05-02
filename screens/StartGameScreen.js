@@ -6,6 +6,7 @@ import {
             View,
             Alert
         } from 'react-native';
+import Colors from '../constants/colors';
 import PrimaryButton from '../components/PrimaryButton';
 
 function StartGameScreen ({onPickNumber}){
@@ -62,12 +63,12 @@ export default StartGameScreen;
 const styles = StyleSheet.create({
   inputContainer: {
     // flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
+    justifyContent: "center",
+    alignItems: "center",
     marginTop: 100,
     marginHorizontal: 24,
     padding: 16,
-    backgroundColor: "#3b021f",
+    backgroundColor: Colors.primary800,
     borderRadius: 8,
     //Drop Shadow on Android
     elevation: 4,
@@ -81,17 +82,17 @@ const styles = StyleSheet.create({
     height: 50,
     width: 50,
     fontSize: 32,
-    borderBottomColor: "#ddb52f",
+    borderBottomColor: Colors.accent500,
     borderBottomWidth: 2,
-    color: "#ddb52f",
+    color: Colors.accent500,
     marginVertical: 8,
-    fontWeight: 'bold',
-    textAlign: 'center'
+    fontWeight: "bold",
+    textAlign: "center",
   },
   buttonsContainer: {
-      flexDirection: 'row'
+    flexDirection: "row",
   },
   buttonContainer: {
-      flex: 1
-  }
+    flex: 1,
+  },
 });
